@@ -6,9 +6,16 @@
 }
 
 .card {
-  background-color: blue;
   padding: 32px 40px;
   border-radius: 10px;
+}
+
+.card.red {
+  background: red;
+}
+
+.card.blue {
+  background: blue;
 }
 
 .card p {
