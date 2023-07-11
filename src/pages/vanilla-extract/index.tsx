@@ -6,7 +6,7 @@ import {
   centerStyles,
   redStyles,
   textStyles,
-} from '@/pages/vanilla-extract/page.css'
+} from '@/styles/vanilla-extract.css'
 
 export default function VanillaExtract() {
   const [bg, setBg] = useState<'red' | 'blue'>('red')
