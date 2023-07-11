@@ -58,6 +58,15 @@ export default function Home() {
             Learn how to style Next.js apps using <code>Chakra UI</code>.
           </p>
         </Link>
+
+        <Link href="/how-to-make-css-in-js" className={styles.card}>
+          <h2>
+            How to make
+            <br />
+            CSS in JS <span>-&gt;</span>
+          </h2>
+          <p>Learn the Mechanisms of CSS in JS UI</p>
+        </Link>
       </div>
     </main>
   )
