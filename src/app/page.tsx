@@ -67,6 +67,15 @@ export default function Home() {
           </h2>
           <p>Learn the Mechanisms of CSS in JS UI</p>
         </Link>
+
+        <Link href="/how-to-make-css-in-js" className={styles.card}>
+          <h2>
+            Vanilla Extract <span>-&gt;</span>
+          </h2>
+          <p>
+            Learn how to style Next.js apps using <code>Vanilla Extract</code>.
+          </p>
+        </Link>
       </div>
     </main>
   )
