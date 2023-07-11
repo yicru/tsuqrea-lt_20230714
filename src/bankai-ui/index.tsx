@@ -5,6 +5,9 @@ import crypto from 'crypto'
 
 type Sx = CSS.Properties
 
+/**
+ * ex: { color: 'red', fontSize: '16px' } => color: red; font-size: 16px;
+ */
 const generateStyles = (sx: Sx): string => {
   return Object.entries(sx)
     .map(([key, value]) => `${paramCase(key)}: ${value};`)
@@ -16,6 +19,11 @@ type BoxProps = {
   onClick?: () => void
 } & CSS.Properties
 
+/**
+ * @see https://github.com/emotion-js/emotion/blob/main/packages/sheet/src/index.js
+ * @see https://github.com/emotion-js/emotion/blob/main/packages/serialize/src/index.js#L246
+ * @see https://github.com/emotion-js/emotion/blob/main/packages/css/src/create-instance.js#L78
+ */
 const Box = ({ children, onClick, ...sx }: BoxProps) => {
   const className = useMemo(() => {
     const stringified = JSON.stringify(sx)
