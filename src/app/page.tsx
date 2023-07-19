@@ -68,7 +68,7 @@ export default function Home() {
           <p>Learn the Mechanisms of CSS in JS UI</p>
         </Link>
 
-        <Link href="/how-to-make-css-in-js" className={styles.card}>
+        <Link href="/vanilla-extract" className={styles.card}>
           <h2>
             Vanilla Extract <span>-&gt;</span>
           </h2>
